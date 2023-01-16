@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: montserrat_medium;
+  src: url(../font/Montserrat-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: montserrat_regular;
+  src: url(../font/Montserrat-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: notosansKR;
+  src: url(../font/NotoSansKR-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: notosansKR_medium;
+  src: url(../font/NotoSansKR-Medium.woff) format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  font: 1em montserrat_medium, montserrat_regular, notosansKR, notosansKR_medium;
+  /* background: rgb(229, 236, 197); */
+  color: #fff;
+
+  transition: background-color 0.3s ease-out;
+}
+
+#wraaper {
+  width: 100%;
+}
+
+#popwrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2.813rem;
+  background: rgb(34, 34, 34);
+  z-index: 502;
+}
+
+.popup {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.popup p {
+  font-size: 14px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.popup a span {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #fff;
+  line-height: 45px;
+}
+
+nav {
+  position: fixed;
+  top: 45px;
+  box-sizing: border-box;
+
+  width: 100%;
+
+  z-index: 555;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.gnb {
+  display: flex;
+
+  justify-content: space-between;
+
+  width: 100%;
+  /* max-width: 1900px; */
+  margin: 0 auto;
+  height: 64px;
+
+  line-height: 64px;
+  padding: 0px 80px;
+
+  box-sizing: border-box;
+
+  background: #fff;
+
+  transition: background-color 0.3s ease-out;
+}
+
+.gnb ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.gnb_left {
+  width: 70%;
+}
+
+.gnb_left ul {
+  display: flex;
+}
+
+.gnb_left ul li {
+  padding-right: 20px;
+}
+
+.gnb_left ul li:first-child img {
+  height: 1.5rem;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.gnb_right {
+  width: 30%;
+  /* justify-content: end; */
+}
+
+.gnb_right ul {
+  display: flex;
+  justify-content: end;
+  /* padding: 0 80px; */
+}
+
+.gnb_right ul li {
+  padding-left: 25px;
+  /* line-height: 64px; */
+}
+
+.gnb_right ul li a span {
+  vertical-align: middle;
+}
+
+.gnb ul li a {
+  color: #222222 !important;
+}
+
+.visual {
+  position: relative;
+
+  display: flex;
+
+  width: 100%;
+
+  /* margin: 180px 0 0; */
+
+  color: #222222;
+
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+.visual_left {
+  position: sticky;
+  top: 140px;
+  left: 80px;
+
+  width: 50%;
+  /* height: 693px; */
+
+  box-sizing: border-box;
+}
+
+.visual_left span {
+  font-size: 28px;
+  margin-right: 20px;
+}
+
+.visual_left h1 {
+  font-size: 96px;
+  line-height: 100px;
+  margin: 20px 0;
+}
+
+.visual_left p {
+  font-family: notosansKR;
+  font-size: 20px;
+
+  width: 691px;
+  height: 315px;
+
+  letter-spacing: -1px;
+  line-height: 35px;
+
+  margin-bottom: 50px;
+
+  opacity: 0.8;
+}
+
+.visual_left button {
+  width: 264px;
+  height: 54px;
+  padding: 12px 16px;
+  border-radius: 5px;
+  background: #222222;
+  font-family: montserrat_regular;
+  font-size: 20px;
+  color: #fff;
+}
+
+.visual_right {
+  width: 50%;
+
+  margin-top: 140px;
+
+  /* box-sizing: border-box; */
+}
+
+.visual_right li {
+  margin: 0 0 18px;
+}
+
+.visual_right img {
+  width: 851px;
+  height: 1064px;
+}
+
+footer {
+  max-width: 100%;
+
+  margin: 488px 80px 80px;
+}
+
+footer ul li {
+  line-height: 80px;
+}
+
+footer ul li a {
+  font-size: 96px;
+  color: #222222;
+}
+
+@media screen and (max-width: 1600px) {
+  nav {
+    top: 38px;
+  }
+
+  #popwrap {
+    height: 38px;
+  }
+
+  .popup p {
+    font-size: 12px;
+
+    line-height: 38px;
+  }
+
+  .gnb {
+    height: 54px;
+
+    line-height: 54px;
+  }
+
+  .gnb_left img {
+    width: 18px;
+    height: 20px;
+  }
+
+  .gnb ul li a {
+    font-size: 17px;
+  }
+
+  .visual {
+    margin: 140px 0 0;
+
+    color: #222222;
+
+    align-items: flex-start;
+
+    box-sizing: border-box;
+  }
+
+  .visual_left {
+    top: 110px;
+  }
+
+  .visual_left .info span {
+    font-size: 23px;
+  }
+
+  .visual_left .info h1 {
+    font-size: 78px;
+
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .visual_left .info p {
+    width: 547px;
+    height: 238px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+    margin-bottom: 60px;
+  }
+
+  .visual_left .info button {
+    font-size: 17px;
+  }
+
+  .visual_right {
+    margin: 0;
+  }
+
+  .visual_right img {
+    width: 683px;
+    height: 853px;
+  }
+
+  footer ul li {
+    line-height: 60px;
+  }
+
+  footer ul li a {
+    font-size: 78px;
+  }
+}
